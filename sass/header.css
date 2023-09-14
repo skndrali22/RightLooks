@@ -1,0 +1,271 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Domine:wght@400;600&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #ffffff;
+}
+header nav {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 1.5rem 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav .nav-logo img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+header nav .close-nav {
+  display: none;
+}
+header nav .close-nav img {
+  width: 30px;
+}
+header nav .nav-links {
+  display: flex;
+  align-items: center;
+  gap: 6rem;
+}
+header nav .nav-links .mbl-logo {
+  display: none;
+}
+header nav .nav-links ul {
+  display: flex;
+  gap: 4rem;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+header nav .nav-links ul li {
+  list-style: none;
+}
+header nav .nav-links ul li a {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #181818;
+  font-family: "DM Sans", sans-serif;
+  transition: all 0.2s ease-in-out;
+}
+header nav .nav-links ul li a:hover {
+  color: #0681c9;
+}
+header nav .nav-links .become-dealer a {
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #0681c9;
+  font-family: "DM Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  padding: 0.75rem 2rem;
+  border-radius: 5px;
+}
+header nav .search-btn {
+  cursor: pointer;
+}
+header nav .search-bar {
+  background-color: #ffffff;
+  transition: all 0.4s ease-in-out;
+  position: absolute;
+  top: 0;
+  margin-top: -10rem;
+}
+header nav .search-bar .search {
+  padding: 3rem 2rem;
+  width: 1375px;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+header nav .search-bar .search input {
+  width: 70%;
+  padding: 1rem;
+}
+header nav .search-bar .search button {
+  position: absolute;
+  top: 3.85rem;
+  right: 18rem;
+  border: none;
+  margin-right: -3rem;
+  background: transparent;
+}
+header nav .search-bar .search .close-search {
+  position: absolute;
+  right: 4rem;
+  top: 4rem;
+  cursor: pointer;
+}
+header nav .search-bar .search .close-search img {
+  width: 30px;
+}
+header nav .toggle-bar {
+  display: none;
+}
+
+header nav .search-bar.active-search {
+  margin-top: 0;
+  z-index: 99;
+}
+
+@media only screen and (max-width: 1375px) {
+  header nav .search-bar .search {
+    max-width: 100%;
+  }
+  header nav .search-bar {
+    width: 97%;
+  }
+  header nav .search-bar .search button {
+    right: 17.5rem;
+  }
+}
+@media only screen and (max-width: 1300px) {
+  header nav .search-bar .search button {
+    right: 16.5rem;
+  }
+  header nav .nav-links ul {
+    gap: 2.5rem;
+    flex-wrap: wrap;
+  }
+  header nav .nav-links {
+    gap: 4rem;
+  }
+}
+@media only screen and (max-width: 1050px) {
+  header nav .nav-links {
+    gap: 2rem;
+  }
+  header nav .nav-links .become-dealer a {
+    font-size: 15px;
+  }
+}
+@media only screen and (max-width: 990px) {
+  header nav .nav-links {
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: white;
+    width: 450px;
+    padding: 2rem;
+    height: 100vh;
+    z-index: 99;
+    transition: all 0.3s ease-in-out;
+    margin-left: -40rem;
+    align-items: flex-start;
+  }
+  header nav .nav-links.active-nav {
+    margin-left: 0;
+    box-shadow: 0 0 0 100vw rgba(155, 153, 153, 0.4901960784);
+  }
+  header nav .nav-links .mbl-logo {
+    display: block;
+  }
+  header nav .nav-links .close-nav {
+    display: block;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+  }
+  header nav .nav-links ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  header nav .nav-logo img {
+    -o-object-fit: cover;
+    object-fit: cover;
+    width: 200px;
+  }
+  header nav {
+    padding: 1.5rem 30px;
+  }
+  header nav .search-btn {
+    cursor: pointer;
+    margin-right: 4rem;
+  }
+  header nav .toggle-bar {
+    display: block;
+    position: absolute;
+    right: 2rem;
+  }
+  header nav .search-bar {
+    width: 100%;
+    left: 0;
+  }
+  header nav .search-bar .search button {
+    right: 15rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  header nav .search-bar .search button {
+    right: 12.5rem;
+    margin-top: -2px;
+  }
+  header nav .search-bar .search button img {
+    width: 20px;
+  }
+  header nav .search-bar .search input {
+    padding: 0.75rem;
+  }
+}
+@media only screen and (max-width: 550px) {
+  header nav .nav-links {
+    width: 94%;
+  }
+  header nav .close-nav img {
+    width: 25px;
+  }
+  header nav .nav-logo img {
+    -o-object-fit: cover;
+    object-fit: cover;
+    width: 120px;
+  }
+  header nav .search-bar .search .close-search {
+    position: absolute;
+    right: 1.5rem;
+    top: 2.75rem;
+    cursor: pointer;
+  }
+  header nav .search-bar .search .close-search img {
+    width: 20px;
+  }
+  header nav .search-bar .search button img {
+    width: 18px;
+  }
+  header nav .search-bar .search button {
+    right: 8rem;
+    margin-top: -18px;
+  }
+  header nav {
+    padding: 1.5rem 25px;
+  }
+  header nav .toggle-bar {
+    right: 1.5rem;
+  }
+  header nav .search-btn {
+    cursor: pointer;
+    margin-right: 3.4rem;
+  }
+  header nav .nav-links ul {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  header nav .nav-links .become-dealer {
+    margin-top: 0.75rem;
+  }
+  header nav .search-bar .search {
+    padding: 2rem 1rem;
+  }
+  header nav .nav-links.active-nav {
+    padding: 1.5rem;
+  }
+}/*# sourceMappingURL=header.css.map */

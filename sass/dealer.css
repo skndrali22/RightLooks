@@ -1,0 +1,210 @@
+@import url("https://fonts.googleapis.com/css2?family=Domine&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Domine&display=swap");
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.h2-primary {
+  font-family: "Domine";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 62px;
+  line-height: 66px;
+  text-transform: capitalize;
+  color: #1D1D1D;
+}
+.h2-primary span {
+  color: #0681C9;
+}
+
+.dealer-container {
+  padding: 3% 20px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.dealer-container .dealer-img img {
+  width: 100%;
+  height: -webkit-fill-available;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.dealer-container .dealer-info p {
+  font-family: "Domine";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 84px;
+  display: flex;
+  align-items: center;
+  color: #1D1D1D;
+  opacity: 0.7;
+}
+.dealer-container .dealer-info .h2-primary {
+  margin-bottom: 30px;
+}
+.dealer-container .dealer-info .dealer-description {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  color: #7A7A7A;
+  opacity: 1;
+}
+.dealer-container .top-neg {
+  padding: 0 45px;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  color: #7A7A7A;
+  margin-top: -100px;
+}
+
+.form-instruction {
+  text-align: center;
+  margin: 0;
+  padding: 30px 0;
+}
+.form-instruction .message {
+  font-family: "Domine";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #141414;
+}
+.form-instruction h2 {
+  font-family: "Domine";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 58px;
+  line-height: 60px;
+  color: #393A39;
+  text-transform: uppercase;
+}
+.form-instruction .fill-form {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  text-align: center;
+  color: rgba(126, 126, 126, 0.81);
+}
+
+@media only screen and (max-width: 1350px) {
+  .dealer-container .top-neg {
+    margin-top: 0;
+  }
+}
+@media only screen and (max-width: 1250px) {
+  .h2-primary {
+    font-size: 46px;
+    line-height: 21px;
+  }
+  .dealer-container .dealer-info .dealer-description {
+    font-size: 16px;
+    line-height: 18px;
+  }
+  .dealer-container .top-neg {
+    margin-top: -50px;
+    padding: 0 30px;
+    font-size: 16px;
+    line-height: 18px;
+  }
+  .form-instruction h2 {
+    font-size: 42px;
+    line-height: 44px;
+  }
+  .dealer-container .dealer-info p {
+    font-size: 16px;
+    line-height: 50px;
+  }
+}
+@media only screen and (max-width: 990px) {
+  .dealer-container .top-neg {
+    margin-top: 0;
+  }
+  .dealer-container .dealer-info .h2-primary {
+    font-size: 38px;
+    line-height: 18px;
+    margin-bottom: 20px;
+  }
+}
+@media only screen and (max-width: 770px) {
+  .dealer-container .dealer-info p {
+    font-size: 14px;
+    line-height: 30px;
+  }
+  .dealer-container .dealer-info .h2-primary {
+    font-size: 26px;
+    line-height: 13px;
+    margin-bottom: 16px;
+  }
+  .dealer-container .dealer-info .dealer-description {
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .dealer-container .top-neg {
+    padding: 0 20px;
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .form-instruction .message {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .form-instruction h2 {
+    font-size: 34px;
+    line-height: 36px;
+  }
+  .form-instruction .fill-form {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .form-instruction {
+    padding: 18px 0;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .dealer-container .dealer-info p {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 34px;
+    margin-bottom: 0;
+  }
+  .dealer-container .dealer-info .h2-primary {
+    font-size: 28px;
+    line-height: 66px;
+    margin-bottom: 0;
+  }
+  .dealer-container .dealer-info .dealer-description {
+    font-size: 17px;
+    line-height: 26px;
+  }
+  .dealer-container .top-neg {
+    font-size: 17px;
+    line-height: 26px;
+    padding: 10px;
+  }
+  .form-instruction .message {
+    font-size: 18px;
+    line-height: 21px;
+  }
+  .form-instruction h2 {
+    font-size: 28px;
+  }
+  .form-instruction .fill-form {
+    font-size: 16px;
+    line-height: 21px;
+  }
+  .form-instruction {
+    padding: 30px 0;
+  }
+  .dealer-info {
+    margin-top: -35px;
+  }
+}/*# sourceMappingURL=dealer.css.map */
